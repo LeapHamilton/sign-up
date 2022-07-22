@@ -1,0 +1,52 @@
+body {
+    margin: 0; padding: 0;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.container {
+min-height: 100vh;
+min-width: 100%;
+  background: yellow;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr;
+}
+
+
+img {
+    grid-row: 1 / 5;
+    width:169%;
+    background-size: cover;
+    background-color: black;
+}
+
+
+.logo {
+    content: "Richard J. Dowling";
+    color:aliceblue;
+    position: absolute;
+    left: 0;  
+    top: 40%;
+    width: 28.6%;
+    height: 20%;
+    background-color: gold;
+    opacity: 50%;
+}
+
+.intro {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: crimson;
+}
+
+.form {
+    grid-column: 2;
+    grid-row: 2 /4;
+    background-color: indianred;
+}
+.submit {
+    grid-column:2;
+    grid-row: 4;
+    background-color: deepskyblue;
+}
