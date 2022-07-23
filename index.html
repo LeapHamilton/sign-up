@@ -5,16 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form for Richard J. Dowling</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <div class="container">
-        <img src="the-new-york-public-library-kvHhSroTNPY-unsplash.jpg" alt="astronaut">
-        <div class="logo">LOGO</div>
-        <div class="intro">Intro</div>
-        <div class="form">The form</div>
-        <div class="submit">submit</div>
+        <img src="the-new-york-public-library-kvHhSroTNPY-crop.jpg" alt="astronaut's golden visor glinting in space">
+        <span class="caption">Image courtesy of New York Public Library</span>
+        <div class="logo">
+            <span class="material-symbols-outlined">
+                rocket_launch
+                </span>
+            Richard J. Dowling
+        </div>
+        <div class="intro">
+            <p>Novels, music, coding... If you're finding it difficult to keep up with all of Richard J. Dowling's output then why not join Rickiepedia now to stay informed? </p>
+            <p>We'll send you the latest news on his creations and you'll <i>always</i> be up to date.</p>
+            <p>Take the Leap!</p>
+        </div>
+        <div class="form">
+            <form>
+               
+                    <label for="fname">FIRST NAME<input type="text" id="fname" name="fname"></label>
+                    <label for="lname">LAST NAME<input type="text" id="lname" name="lname"></label><br>
+                    <label for="phone">PHONE<input type="phone" name="phone" id="phone"></label>
+            
+                    <label for="email">EMAIL<input type="email" name="email" id="email"></label><br>
+                    <label for="pword">PASSWORD<input type="password" name="pword" id="pword"></label>
+                    <label for="confirm">CONFIRM PASSWORD <input type="password" name="confirm" id="confirm"></label>
+            
+              </form> 
+
+        </div>
+        <div class="submit">
+        Begin your journey into the Richard J. Dowling universe <br>
+
+        <button type="submit" value="submit">Join Rickipedia!</button>
+    </div>
     </div>
 </body>
 </html>
