@@ -20,29 +20,30 @@
             Richard J. Dowling
         </div>
         <div class="intro">
-            <p>Novels, music, coding... If you're finding it difficult to keep up with all of Richard J. Dowling's output then why not join Rickiepedia now to stay informed? </p>
+            <p>Novels, music, coding... If you're finding it difficult to keep up with all of Richard J. Dowling's output then why not join Rickipedia now to stay informed? </p>
             <p>We'll send you the latest news on his creations and you'll <i>always</i> be up to date.</p>
             <p>Take the Leap!</p>
         </div>
         <div class="form">
-            <form>
+            <form method="post" action="javascript:void(0);" >
                
-                    <label for="fname">FIRST NAME<input type="text" id="fname" name="fname"></label>
+                    <label for="fname">FIRST NAME*<input type="name" id="fname" name="fname" required pattern="^[a-zA-Z]{2,15}$" title="Your name must have a minimum of two characters. Only uppercase or lowercase letters allowed." placeholder=" "></label>
                     <label for="lname">LAST NAME<input type="text" id="lname" name="lname"></label><br>
-                    <label for="phone">PHONE<input type="phone" name="phone" id="phone"></label>
+                    <label for="phone">PHONE<input type="phone" name="phone" id="phone" pattern="^\+?[1-9][0-9]{7,14}$" title="Please include the `+` followed by the international dialling code for your country."></label>
             
-                    <label for="email">EMAIL<input type="email" name="email" id="email"></label><br>
-                    <label for="pword">PASSWORD<input type="password" name="pword" id="pword"></label>
-                    <label for="confirm">CONFIRM PASSWORD <input type="password" name="confirm" id="confirm"></label>
-            
+                    <label for="email">EMAIL*<input type="email" name="email" id="email" required placeholder=" "></label><br>
+                    <label for="pword">PASSWORD*<input type="password" name="pword" id="pword" required placeholder=" " pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$" title="Your password must be a minimum of 8 characters, including at least one number as well as one lowercase and one uppercase letter."></label>
+                    <label for="confirm">CONFIRM PASSWORD*<input type="password" name="confirm" id="confirm" required placeholder=" " pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"></label>
+                    <p class="help">* indicates a required field</p>
               </form> 
 
         </div>
+        
         <div class="submit">
-        Begin your journey into the Richard J. Dowling universe <br>
+            Begin your journey into the Richard J. Dowling universe...
 
         <button type="submit" value="submit">Join Rickipedia!</button>
     </div>
-    </div>
+        </div>
 </body>
 </html>
